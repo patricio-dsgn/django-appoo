@@ -16,11 +16,14 @@
 .bar_log .log{
 	/*border: 3px solid #000;*/
 	position: relative;
+	color: #f60284;
+
 }
 
 .bar_log .log a{
 	margin: 0 10px;
 	/*border: 3px solid #000;*/
+	color: #0aefe7;
 }
 
 
@@ -61,6 +64,12 @@ nav a{
 	border-radius: 10px;
 	background: rgba(255,255,255,0.8);
 	color: #f07;
+}
+
+.air1{
+	margin-top: 100px !important;
+	margin-bottom: 100px !important;
+	padding: 20px !important;
 }
 
 .card-me .txt1{

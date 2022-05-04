@@ -26,14 +26,43 @@
 </head>
 <body class="grey lighten-3">
   
-  <div class="bar_log purple darken-4">
-    <div class="log">
 
+
+
+
+
+  <div class="bar_log purple darken-4">
+    {% if user.is_authenticated %}
+    
+    <div class="log">
+      Hola {{user.first_name}} {{user.last_name}} !
     </div>
     <div class="log">
-      <a href="#">register</a>
-      <a href="#">login</a>
+      <a href="{% url 'logout' %}">logout</a>
     </div>
+
+    {% else %}
+    
+    <div class="log">
+    </div>  
+    <div class="log">
+      <a href="{% url 'register_user' %}">register</a>
+      <a href="{% url 'login' %}">login</a>
+    </div>  
+    {% endif %}
+  
+  </div>
+
+
+
+
+
+
+
+
+
+
+
   </div>
 
 
@@ -82,7 +111,7 @@
             <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
             <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-            <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+            <li><a class="grey-text text-lighten-3" href="admin/">admin</a></li>
           </ul>
         </div>
       </div>
