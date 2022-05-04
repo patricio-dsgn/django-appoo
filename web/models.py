@@ -54,6 +54,11 @@ class Photo(models.Model):
 
 
 
+class Suscriptor(models.Model):
+    idm = models.CharField(max_length=100)
+    full_name = models.CharField(max_length=100)
+    email = models.CharField(max_length=1000)
+
 
 
 
