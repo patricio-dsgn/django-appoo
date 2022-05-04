@@ -15,6 +15,7 @@
 
 .bar_log .log{
 	/*border: 3px solid #000;*/
+	position: relative;
 }
 
 .bar_log .log a{
@@ -29,6 +30,23 @@ nav a{
 }
 
 
+
+
+.joke{
+	z-index: 12000;
+	min-height: 200px;
+	width: 200px;
+	margin: 30px;
+	padding: 20px;
+	border: 1px solid #000;
+	border-radius: 10px;
+	box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+	background: rgba(255,255,255,0.3);
+}
+
+.joke h2{
+	margin-top: 0;
+}
 
 
 .card-me{

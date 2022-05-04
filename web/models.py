@@ -21,10 +21,17 @@ class Scale(models.Model):
     cause = models.CharField(max_length=100)
 
 class Tip(models.Model):
+    ICONS= (
+        ('fa-solid fa-droplet','agua'),
+        ('fa-solid fa-wheat-awn','comida'),
+        ('fa-solid fa-person-running','deporte'),
+        ('fa-solid fa-comment-medical','medicamento'),
+        ('fa-solid fa-comment','otros'),
+    )
     idm = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
     text = models.CharField(max_length=100)
-    icon = models.CharField(max_length=100)
+    icon = models.CharField(max_length=100, choices=ICONS)
 
 class Post(models.Model):
     idm = models.CharField(max_length=100)
@@ -36,10 +43,15 @@ class Post(models.Model):
         blank=True)
 
 class Link(models.Model):
+    ICONS= (
+        ('fa-solid fa-globe','web'),
+        ('fa-solid fa-house-medical','salud'),
+        ('fa-solid fa-link','otros'),
+    )
     idm = models.CharField(max_length=100)
     title = models.CharField(max_length=100)
     text = models.CharField(max_length=100)
-    icon = models.CharField(max_length=100)
+    icon = models.CharField(max_length=100, choices=ICONS)
 
 
 

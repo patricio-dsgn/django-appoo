@@ -6,25 +6,17 @@
 {% block content %}
 <div class="container">
     <div class="row">
-        <h1 class="col s12">Recomendaciones</h1>
-        {{ query_tips }}
-
-
-                {% if item.icon == 'water'
-%}
-
-                {% for item in query_tips %}
-                
-                
-                <h3>
-                    <i class="fa-solid fa-droplet"></i>
-                    <span>{{ item.icon}}</span>
-                    {{ item.title }}</h3>
-                <p>{{ item.text }}</p>
         
-            {% endfor %}
-
-            
+        <h1 class="center">Recomendaciones</h1>
+        {% for item in query_tips %}
+        <div class="card blue lighten-4 col s12 m8 offset-m2 section">
+            <h4>
+                <i class="{{ item.icon}}"></i>
+                {{ item.title }}</h4>
+            <p>{{ item.text }}</p>
+        </div>  
+        {% endfor %}
+      
     </div>
 </div>
 
