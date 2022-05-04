@@ -21,16 +21,22 @@ def home(request):
 
 
 def escala(request):
-  return render(request,'web/escala.html')
+  query_scale = Scale.objects.all()
+  return render(request,'web/escala.html',{'query_scale':query_scale})
 
 def recomendaciones(request):
-  return render(request,'web/recomendaciones.html')
+  query_tips = Tip.objects.all()
+  return render(request,'web/recomendaciones.html',{'query_tips':query_tips})
 
 def blog(request):
-  return render(request,'web/blog.html')
+  query_posts = Post.objects.all()
+  return render(request,'web/blog.html',{'query_posts':query_posts})
 
 def enlaces(request):
-  return render(request,'web/enlaces.html')
+  query_links = Link.objects.all()
+  return render(request,'web/enlaces.html',{'query_links':query_links})
 
 def fotos(request):
-  return render(request,'web/fotos.html')
+  len_obj = len(Photo.objects.all())
+  query_photos = Photo.objects.all()[randint(0, len_obj-1)]
+  return render(request,'web/fotos.html',{'query_photos':query_photos})

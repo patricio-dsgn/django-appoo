@@ -22,9 +22,9 @@ class Scale(models.Model):
 
 class Tip(models.Model):
     idm = models.CharField(max_length=100)
-    t_title = models.CharField(max_length=100)
-    t_text = models.CharField(max_length=100)
-    t_icon = models.CharField(max_length=100)
+    title = models.CharField(max_length=100)
+    text = models.CharField(max_length=100)
+    icon = models.CharField(max_length=100)
 
 class Post(models.Model):
     idm = models.CharField(max_length=100)
@@ -55,7 +55,6 @@ class Photo(models.Model):
 
 
 class Suscriptor(models.Model):
-    idm = models.CharField(max_length=100)
     full_name = models.CharField(max_length=100)
     email = models.CharField(max_length=1000)
 

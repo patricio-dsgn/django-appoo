@@ -7,14 +7,24 @@
 <div class="container">
     <div class="row">
         <h1 class="col s12">Recomendaciones</h1>
+        {{ query_tips }}
 
-            <p>Type of stool. The authors of
-            the former paper concluded that the form of the stool
-            is a useful surrogate measure of colon transit time.
-            That conclusion has since e Scandinavian Journal of Gastroenterology
-            after a previous prospective study, conducted in
-            on a sample of the</p>
 
+                {% if item.icon == 'water'
+%}
+
+                {% for item in query_tips %}
+                
+                
+                <h3>
+                    <i class="fa-solid fa-droplet"></i>
+                    <span>{{ item.icon}}</span>
+                    {{ item.title }}</h3>
+                <p>{{ item.text }}</p>
+        
+            {% endfor %}
+
+            
     </div>
 </div>
 
