@@ -1,4 +1,4 @@
-# Djangroup
+# Appoo (una app sobre la caca)
 
 ---
 
