@@ -16,7 +16,6 @@ class table_format3(admin.ModelAdmin):
 class table_format4(admin.ModelAdmin):
     list_display = ('typesb', 'text', 'cause', 'photo')
 
-
 admin.site.register(Funfact, table_format1)
 admin.site.register(Scale, table_format4)
 admin.site.register(Tip, table_format2)

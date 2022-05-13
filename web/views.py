@@ -65,51 +65,54 @@ def fotos(request):
 # ---------------------------------------------
 
 def contact(request):
-    if request.method == 'GET':
-        form = ContactForm()
-    else:
-        form = ContactForm(request.POST)
-        if form.is_valid():
-            contact = form.save()
-            name = form.cleaned_data['name']
-            sender = form.cleaned_data['sender']
-            subject = form.cleaned_data['subject']
-            message = form.cleaned_data['message']
-            cc_myself = form.cleaned_data['cc_myself']
-            contact.sending_date = timezone.now()
-            contact.save()
+  if request.method == 'GET':
+    form = ContactForm()
+  else:
+    form = ContactForm(request.POST)
+    if form.is_valid():
+      contact = form.save()
+      name = form.cleaned_data['name']
+      sender = form.cleaned_data['sender']
+      subject = form.cleaned_data['subject']
+      message = form.cleaned_data['message']
+      cc_myself = form.cleaned_data['cc_myself']
+      contact.sending_date = timezone.now()
+      contact.save()
 
-            recipients = []
-            if cc_myself:
-                recipients.append(sender)
+      recipients = []
+      if cc_myself:
+        recipients.append(sender)
 
-            send_mail(subject, message,"", recipients)
-            # The signature for the send_email method is:
-                    # send_mail(subject, message, from_email, recipient_list, fail_silently=False, 
-                    # auth_user=None, auth_password=None, connection=None, html_message=None)
-            return redirect('success')
-    return render(request, "web/contact.html", {'form': form})
+      send_mail(subject, message,"", recipients)
+      # The signature for the send_email method is:
+      # send_mail(subject, message, from_email, recipient_list, fail_silently=False, 
+      # auth_user=None, auth_password=None, connection=None, html_message=None)
+      return redirect('success')
+  return render(request, "web/contact.html", {'form': form})
 
 def success(request):
-    return render(request, 'web/success.html', {'success': success})
+  return render(request, 'web/success.html', {'success': success})
+
 
 def message_list(request):
-    messages = Contact.objects.order_by('sending_date')
-    return render(request, 'web/message_list.html', {'messages': messages})
+  messages = Contact.objects.order_by('sending_date')
+  return render(request, 'web/message_list.html', {'messages': messages})
+
 
 @login_required
 def my_messages(request):
-    email= request.user.email
-    my_messages = Contact.objects.filter(sender= email).all().order_by('sending_date')
-    return render(request, 'web/my_messages.html', {'my_messages': my_messages})
+  email = request.user.email
+  my_messages = Contact.objects.filter(sender=email).all().order_by('sending_date')
+  return render(request, 'web/my_messages.html', {'my_messages': my_messages})
 
 
 def message_detail(request,pk):
-    message = get_object_or_404(Contact, pk=pk)
-    return render(request, 'web/message_detail.html', {'message': message})
+  message = get_object_or_404(Contact, pk=pk)
+  return render(request, 'web/message_detail.html', {'message': message})
+
 
 @login_required
 def message_remove(request,pk):
-    message = get_object_or_404(Contact, pk=pk)
-    message.delete()
-    return redirect('message_list')
+  message = get_object_or_404(Contact, pk=pk)
+  message.delete()
+  return redirect('message_list')
