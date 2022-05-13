@@ -2,7 +2,7 @@ from django.contrib import admin
 
 # Register your models here.
 
-from . models import Funfact, Scale, Tip, Post, Link, Photo, Suscriptor
+from . models import *
 
 
 
@@ -25,3 +25,5 @@ admin.site.register(Link, table_format2)
 admin.site.register(Photo, table_format1)
 admin.site.register(Suscriptor, table_format3)
 
+
+admin.site.register(Contact)

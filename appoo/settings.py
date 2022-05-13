@@ -133,3 +133,9 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+
+
+DEFAULT_FROM_EMAIL = 'info@appoo.cl'
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+

@@ -1,5 +1,7 @@
 from django.db import models
 
+from django.utils import timezone
+
 # Create your models here.
 class Funfact(models.Model):
     idm = models.CharField(max_length=100)
@@ -77,4 +79,20 @@ class Suscriptor(models.Model):
 
 
 
+
+# -----------------------------------------
+class Contact(models.Model): 
+  name = models.CharField(max_length=200)
+  sender = models.EmailField()
+  subject = models.CharField(max_length=200)
+  message = models.TextField()
+  cc_myself = models.BooleanField(default=False)
+  sending_date = models.DateTimeField(blank=True, null=True)
+
+  def sent(self):
+    self.sending_date = timezone.now()
+    self.save()
+
+  def str(self):
+    return self.sender
 
