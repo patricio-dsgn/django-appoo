@@ -16,13 +16,13 @@
 
             {% endif %}
 
-            <h2>Register</h2>
+            <h2>Regístro</h2>
             <form action="{% url 'register_user' %}" method="POST" class="post-form">
             {% csrf_token %}
             {{ form.as_p }}
             {% comment %} <form> {% endcomment %}
 
-                <button type="submit" class="save btn btn-default green">Save</button>
+                <button type="submit" class="save btn btn-default green">Guardar</button>
             </form>
 
         </div>
