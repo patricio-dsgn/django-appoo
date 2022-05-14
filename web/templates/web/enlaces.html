@@ -6,9 +6,10 @@
 {% block content %}
 <div class="container">
     <div class="row">
+
         
         <h1 class="center">Enlaces</h1>
-        <div class="card col s12 m8 offset-m2 section ">
+        <div class="col s12 m8 card offset-m2">
             {% for item in query_links %}
             <p>
                 <i class="{{ item.icon}}"></i>
@@ -16,6 +17,7 @@
             </p>
             {% endfor %}
         </div>
+
 
     </div>
 </div>

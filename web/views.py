@@ -30,30 +30,30 @@ def home(request):
   len_obj = len(Funfact.objects.all())
   query_funfacts = Funfact.objects.all()[randint(0, len_obj-1)]
   # value = randint(0, 10)
-  return render(request,'web/home.html',{'query_funfacts':query_funfacts})
+  return render(request,'web/home.html',{'nbar':'home','query_funfacts':query_funfacts})
   
 
 
 def escala(request):
   query_scale = Scale.objects.all()
-  return render(request,'web/escala.html',{'query_scale':query_scale})
+  return render(request,'web/escala.html',{'nbar':'escala','query_scale':query_scale})
 
 def recomendaciones(request):
   query_tips = Tip.objects.all()
-  return render(request,'web/recomendaciones.html',{'query_tips':query_tips})
+  return render(request,'web/recomendaciones.html',{'nbar':'recomendaciones','query_tips':query_tips})
 
 def blog(request):
   query_posts = Post.objects.all()
-  return render(request,'web/blog.html',{'query_posts':query_posts})
+  return render(request,'web/blog.html',{'nbar':'blog','query_posts':query_posts})
 
 def enlaces(request):
   query_links = Link.objects.all()
-  return render(request,'web/enlaces.html',{'query_links':query_links})
+  return render(request,'web/enlaces.html',{'nbar':'enlaces','query_links':query_links})
 
 def fotos(request):
   len_obj = len(Photo.objects.all())
   query_photos = Photo.objects.all()[randint(0, len_obj-1)]
-  return render(request,'web/fotos.html',{'query_photos':query_photos})
+  return render(request,'web/fotos.html',{'nbar':'fotos','query_photos':query_photos})
 
 
 
@@ -88,7 +88,7 @@ def contact(request):
       # send_mail(subject, message, from_email, recipient_list, fail_silently=False, 
       # auth_user=None, auth_password=None, connection=None, html_message=None)
       return redirect('success')
-  return render(request, "web/contact.html", {'form': form})
+  return render(request, "web/contact.html", {'nbar':'contacto','form': form})
 
 def success(request):
   return render(request, 'web/success.html', {'success': success})

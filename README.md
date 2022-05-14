@@ -1,26 +1,22 @@
 # Appoo (una app sobre la caca)
 
----
 
-## integrantes
 
-Francisco Astete
+## Integrantes
 
-Ricardo Castillo
+- Francisco Astete
 
-Javier Espinoza
+- Ricardo Castillo
 
-Patricio Garrido
+- Javier Espinoza
 
-María-Fernanda Villalobos
+- Patricio Garrido
 
----
+- María-Fernanda Villalobos
 
-## info
 
-### Permisos
+## Grupos de Permisos Creados
 
-Hemos creador 3 tipos de permisos
 
 - editor: _todo, excepto admin y auth_.
 
@@ -28,7 +24,7 @@ Hemos creador 3 tipos de permisos
 
 - visit: _solo permisos para ver_.
 
-### Instrucciones para levantar el proyecto
+## Instrucciones para levantar el proyecto
 
 - En el archivo **requirements.txt** estan las librerias necesarias para levantar el proyecto
 
@@ -37,44 +33,59 @@ Hemos creador 3 tipos de permisos
 - Las contraseñas de prueba para cada usuario estan **README-pass-test.txt**.
 
 
-
-
-################## TAREAS PENDIENTES ##################
+---
+# MÓDULO 7
 
 ## ABPro1
 
+- Generación de nuevo modelos en Django para registrarse.
+
+- Migración de los modelos a tablas
+
+- Incorpore una plantilla en la cual se muestran todos los usuarios registrados en una tabla.
+
+- Implemente de datos con MaterilizeCSS e integración de elementos estéticos utilizando CSS
 
 ## ABPro2
 
+- Se conectó el modelo a MySql. (Se adjunta un archivo llamado `appoo-main-mysql.zip` en directorio `extras`)
+
+- Incorporación de sistema de comentarios
+
 
 ## ABPro3
-- css
+- El proyecto ya se encuentra vinculado a diferentes tablas de información
 
-## ABPro4
-- ok - describir choice en admin 4
+- Funfact, Scale, Tip, Post, Link, Photo, Suscriptor.
+
+- Los modelos Tip y Link poseen un siste ma de sub categorias para elegien en el admin 
+
 
 ## ABPro5
-    m7-ABPro5.docx
+
+- Comprobar que las modificaciones se reflejan en nuestro servidor respectivo. En visual studio code `en carpeta migrations`:
+
+<img src="./extras/img/abpro5-01a.png" alt="" style="width:300px" /><br/>
+
+- Comprobar en consola: `python manage.py showmigrations`
+
+<img src="./extras/img/abpro5-01b.png" alt="" style="width:300px" /><br/>
 
 
-<h1>ABPro5</h1>
+- Revertir a migración anterior `python manage.py migrate NOMBRE_DE_APP ID_MIGRACION`
+    
+<img src="./extras/img/abpro5-02.png" alt="" style="width:300px" /><br/>
+
+- Avanzar hasta restaurar la migración actual `python manage.py migrate NOMBRE_DE_APP ID_MIGRACION`
+
+<img src="./extras/img/abpro5-03.png" alt="" style="width:300px" /><br/>
+
+
+- Información sobre formas de volver directamente a la primera migración.
 
 
 
-<img src="./extras/img/abpro5-01a.png" alt="" style="width:300px" />
+-END-
 
 
-<br/>
-<img src="./extras/img/abpro5-01ab.png" alt="" style="width:300px" />  
-
-
-<br/>
-<img src="./extras/img/abpro5-02.png" alt="" style="width:300px" />  
-
-<br/>
-<img src="./extras/img/abpro5-03.png" alt="" style="width:300px" />  
-
-
-- ok - armar pantallazon 5 ------PENDIENTE
-- Indaguen y busquen información sobre formas de volver directamente a la primera migración .
 

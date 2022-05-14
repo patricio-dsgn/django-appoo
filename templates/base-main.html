@@ -28,9 +28,6 @@
   
 
 
-
-
-
   <div class="bar_log purple darken-4">
     {% if user.is_authenticated %}
     
@@ -38,6 +35,7 @@
       Hola {{user.first_name}} {{user.last_name}} !
     </div>
     <div class="log">
+      <a class="orange-text" href="{% url 'my_messages' %}">mis comentarios</a>
       <a href="{% url 'logout' %}">logout</a>
     </div>
 
@@ -83,6 +81,7 @@
           <li {% if nbar == 'blog' %} class="active" {% endif %}><a href="../blog">blog</a></li>
           <li {% if nbar == 'enlaces' %} class="active" {% endif %}><a href="../enlaces">links</a></li>
           <li {% if nbar == 'fotos' %} class="active" {% endif %}><a href="../fotos">galería de fotos</a></li>
+          <li {% if nbar == 'contacto' %} class="active" {% endif %}><a href="../contact">Contácto</a></li>
         </ul>
       </div>
     </div>
@@ -95,6 +94,7 @@
           <li {% if nbar == 'blog' %} class="active" {% endif %}><a href="../blog">blog</a></li>
           <li {% if nbar == 'enlaces' %} class="active" {% endif %}><a href="../enlaces">links</a></li>
           <li {% if nbar == 'fotos' %} class="active" {% endif %}><a href="../fotos">galería de fotos</a></li>
+          <li {% if nbar == 'contacto' %} class="active" {% endif %}><a href="../contact">Contácto</a></li>
   </ul>
 
   {% block content %}contenido{% endblock content %}
