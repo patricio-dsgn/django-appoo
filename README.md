@@ -89,9 +89,14 @@
 
 ## Mapa del Proyecto
 
+Flujo:
+
 <kbd style="width:80%;"> 
-<img src="./extras/img/Frame-1.png" alt="" />
+<img src="./extras/img/Frame-1.png"/>
 </kbd>
+
+
+Screenshots:
 
 <kbd style="width:80%;">
 <img src="./extras/img/Frame-2.png"/>
