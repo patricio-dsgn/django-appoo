@@ -102,11 +102,13 @@ Screenshots:
 </kbd>
 
 </br>
+</br>
 
 <kbd style="width:80%;">
 <img src="./extras/img/Frame-3.png"/>
 </kbd>
 
+</br>
 </br>
 
 <kbd style="width:80%;">
@@ -114,17 +116,20 @@ Screenshots:
 </kbd>
 
 </br>
+</br>
 
 <kbd style="width:80%;">
 <img src="./extras/img/Frame-5.png"/>
 </kbd>
 
 </br>
+</br>
 
 <kbd style="width:80%;">
 <img src="./extras/img/Frame-6.png"/>
 </kbd>
 
+</br>
 </br>
 
 <kbd style="width:80%;">
