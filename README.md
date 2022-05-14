@@ -91,7 +91,7 @@
 
 <kbd> 
 <img src="./extras/img/Frame-1.png" alt="" style="width:80%;" />
-|-
+</kbd>
 
 <kbd>
 <img src="./extras/img/Frame-2.png" alt="" style="width:80%;" />
