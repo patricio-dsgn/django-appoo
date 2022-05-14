@@ -24,6 +24,10 @@ from .forms import *
 # def hello(request):
 #   return HttpResponse("Hello, World! i'm <b>appoo project</b>")
 
+def admin(request):
+  return redirect('admin/')
+
+
 
 def home(request):
   # query_funfacts = Funfact.objects.all()

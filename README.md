@@ -30,7 +30,7 @@
 
 - El entorno virtual usado es **Pipenv**
 
-- Las contraseñas de prueba para cada usuario estan **README-pass-test.txt**.
+- Las contraseñas de prueba para cada usuario estan **README-keys.txt**.
 
 
 ---
@@ -85,7 +85,19 @@
 
 
 
--END-
+---
+
+## Mapa del Proyecto
+
+<img src="./extras/img/Frame-1.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-2.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-3.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-4.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-5.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-6.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-7.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+<img src="./extras/img/Frame-8.png" alt="" style="width:100%; border: 4px solid #431D87" /><br/>
+
 
 
 
