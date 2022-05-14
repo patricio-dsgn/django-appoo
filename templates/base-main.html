@@ -97,6 +97,7 @@
     <li {% if nbar == 'enlaces' %} class="active" {% endif %}><a href="{% url 'enlaces'%}">Links</a></li>
     <li {% if nbar == 'fotos' %} class="active" {% endif %}><a href="{% url 'fotos'%}">Galería de Fotos</a></li>
     <li {% if nbar == 'contacto' %} class="active" {% endif %}><a href="{% url 'contact'%}">Contacto</a></li>
+    <li><a class="grey-text text-lighten-3" href="{% url 'message_list'%}">Comentarios</a></li>
   </ul>
 
   {% block content %}contenido{% endblock content %}
@@ -118,6 +119,7 @@
             <li {% if nbar == 'enlaces' %} class="active" {% endif %}><a class="grey-text text-lighten-3" href="{% url 'enlaces'%}">links</a></li>
             <li {% if nbar == 'fotos' %} class="active" {% endif %}><a class="grey-text text-lighten-3" href="{% url 'fotos'%}">galería de fotos</a></li>
             <li {% if nbar == 'contacto' %} class="active" {% endif %}><a class="grey-text text-lighten-3" href="{% url 'contact'%}">Contácto</a></li>
+            <li><a class="grey-text text-lighten-3" href="{% url 'message_list'%}">Comentarios</a></li>
           </ul>
         </div>
       </div>
