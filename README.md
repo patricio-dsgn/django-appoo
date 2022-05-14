@@ -89,36 +89,36 @@
 
 ## Mapa del Proyecto
 
-<kbd> 
-<img src="./extras/img/Frame-1.png" alt="" style="width:80%;" />
+<kbd style="width:80%;"> 
+<img src="./extras/img/Frame-1.png" alt="" />
 </kbd>
 
-<kbd>
-<img src="./extras/img/Frame-2.png" alt="" style="width:80%;" />
-</kbd>
-
-
-<kbd>
-<img src="./extras/img/Frame-3.png" alt="" style="width:80%;" />
+<kbd style="width:80%;">
+<img src="./extras/img/Frame-2.png"/>
 </kbd>
 
 
-<kbd>
-<img src="./extras/img/Frame-4.png" alt="" style="width:80%;" />
+<kbd style="width:80%;">
+<img src="./extras/img/Frame-3.png"/>
 </kbd>
 
 
-<kbd>
-<img src="./extras/img/Frame-5.png" alt="" style="width:80%;" />
+<kbd style="width:80%;">
+<img src="./extras/img/Frame-4.png"/>
 </kbd>
 
 
-<kbd>
-<img src="./extras/img/Frame-6.png" alt="" style="width:80%;" />
+<kbd style="width:80%;">
+<img src="./extras/img/Frame-5.png"/>
 </kbd>
 
 
-<kbd>
-<img src="./extras/img/Frame-7.png" alt="" style="width:80%;" />
+<kbd style="width:80%;">
+<img src="./extras/img/Frame-6.png"/>
+</kbd>
+
+
+<kbd style="width:80%;">
+<img src="./extras/img/Frame-7.png"/>
 </kbd>
 
