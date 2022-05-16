@@ -80,8 +80,48 @@
 
 <img src="./extras/img/abpro5-03.png" alt="" style="width:300px" /><br/>
 
+---
+### Formas de volver directamente a la primera migración.
 
-- Información sobre formas de volver directamente a la primera migración.
+</br>
+
+Tenemos 2 opciones para eso
+
+OPCION 1: Revertir las migraciones actuales de una aplicación Django a algunas migraciones antiguas.
+OPCION 2: Restablecer todas las migraciones para la aplicación Django.
+
+Si tenemos que volver a migrar desde alguna migración más reciente, digamos 0014, a una migración anterior, digamos 0008, podemos usar los siguientes comandos.
+
+`python manage.py migrate AppName 0008`
+
+ó
+
+`python manage.py migrate AppName 0008_migration_name`
+
+Si tenemos que restablecer TODAS las migraciones para una aplicación Django, podemos usar el siguiente comando.
+
+`python manage.py migrate AppName zero`
+
+    NOTA: A veces las migraciones pueden ser irreversibles.
+    Generalmente, esta condición surge cuando se han realizado algunos cambios significativos en los modelos de Django.
+ 
+    Cuando intentemos volver a dicha migración, Django generará un IrreversibleError.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
